@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>第四问的latex | NyaShark&amp;Rathan的个人博客</title><meta name="author" content="NyaShark&amp;Rathan"><meta name="copyright" content="NyaShark&amp;Rathan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="\documentclass{article} \usepackage{amsmath}\usepackage{graphicx}\usepackage{ctex}\usepackage{float} \begin{document}\subsection{建立决策矩阵 Establishing a decision matrix}依据题目描述：随着资源环境的变化，雄性占比可大致认为在0.5-0.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第四问的latex">
+<meta property="og:url" content="https://nyashark-rathan.icu/2025/02/04/%E7%AC%AC%E5%9B%9B%E9%97%AE%E7%9A%84latex/index.html">
+<meta property="og:site_name" content="NyaShark&amp;Rathan的个人博客">
+<meta property="og:description" content="\documentclass{article} \usepackage{amsmath}\usepackage{graphicx}\usepackage{ctex}\usepackage{float} \begin{document}\subsection{建立决策矩阵 Establishing a decision matrix}依据题目描述：随着资源环境的变化，雄性占比可大致认为在0.5-0.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://nyashark-rathan.icu/image/and.jpg">
+<meta property="article:published_time" content="2025-02-04T14:11:24.000Z">
+<meta property="article:modified_time" content="2025-02-04T14:13:10.546Z">
+<meta property="article:author" content="NyaShark&amp;Rathan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://nyashark-rathan.icu/image/and.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "第四问的latex",
+  "url": "https://nyashark-rathan.icu/2025/02/04/%E7%AC%AC%E5%9B%9B%E9%97%AE%E7%9A%84latex/",
+  "image": "https://nyashark-rathan.icu/image/and.jpg",
+  "datePublished": "2025-02-04T14:11:24.000Z",
+  "dateModified": "2025-02-04T14:13:10.546Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "NyaShark&Rathan",
+      "url": "https://nyashark-rathan.icu/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://nyashark-rathan.icu/2025/02/04/%E7%AC%AC%E5%9B%9B%E9%97%AE%E7%9A%84latex/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '第四问的latex',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/cursor.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load', preloader.endLoading)
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-color: #efefef;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/image/and.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/image/miku.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/image/test.gif" alt="Logo"><span class="site-name">NyaShark&amp;Rathan的个人博客</span></a><a class="nav-page-title" href="/"><span class="site-name">第四问的latex</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">第四问的latex</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-04T14:11:24.000Z" title="发表于 2025-02-04 22:11:24">2025-02-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T14:13:10.546Z" title="更新于 2025-02-04 22:13:10">2025-02-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>\documentclass{article}</p>
+<p>\usepackage{amsmath}<br>\usepackage{graphicx}<br>\usepackage{ctex}<br>\usepackage{float}</p>
+<p>\begin{document}<br>\subsection{建立决策矩阵 Establishing a decision matrix}<br>依据题目描述：随着资源环境的变化，雄性占比可大致认为在0.5-0.8之间。我们不妨以0.05为步长，采样7组数据，建立决策矩阵<br>\Based on the description of the topic: as the resource environment changes, the male share can be roughly considered to be between 0.5 and 0.8. We may wish to sample 7 sets of data in steps of 0.05 and build a decision matrix$(A_{i×j})_{m×n}$</p>
+<p>\subsection{原始决策矩阵正向化 Raw Decision Matrix Normalization}<br>构建决策矩阵时我们需要将原始矩阵正向化处理。在四个评价指标中，我们认为寄生虫传播为极小型指标，使用公式转化为极大型指标<br>\When constructing the decision matrix, we need to normalize the original matrix. Among four evaluation criteria, we consider parasite transmission as a minimization criterion, which we transform into a maximization criterion using a formula. \begin{align*}<br>    \widetilde {x_i}&#x3D;\max{x_i}-x_i<br>\end{align*}<br>同时竞争与合作关系为中间型指标.<br>\Meanwhile, competitive and cooperative interactions are considered as an intermediate criterion, which we also transform into a maximization criterion using a formula.\begin{align*}<br>    \widetilde{x_i}&#x3D;1-\frac{\lvert x_i-x_{best}\rvert}{\max(\lvert x_i-x_{best}\rvert)}<br>\end{align*}<br>食物链的影响与生态位的改变为区间型指标，使用公式转化为极大型指标<br>\Food web dynamics and ecological niche modification are regarded as range criteria, which we convert into maximization criteria using a formula.\begin{align*}<br>    M&#x3D;\max(a-\min{x_i},\max{x_i}-b)<br>    \end{align*}<br>    Where,<br>    \begin{align*}<br>        \widetilde{x_i}&#x3D;\begin{cases}<br>1-\frac{a-x_i}{M}&amp;,{x_i&lt;a}\<br>1 &amp;, {a\leq x_i\leq b}\<br>1-\frac{x_i-b}{M}&amp;,{x_i&gt;b}\<br>\end{cases}<br>    \end{align*}</p>
+<p>\subsection{正向决策矩阵标准化Normalization of forward decision matrices}<br>为了消除不同指标量纲的影响我们进行标准化<br>上述操作后正向化的矩阵如下<br>\In order to eliminate the effect of different metrics scales we can normalize the matrix.<br>The normalized matrix after the above operation is as follows<br>\begin{align*}<br>    \widetilde X&#x3D;\begin{pmatrix}<br>        \widetilde x_{11}&amp;\cdots&amp;\widetilde x_{in}\<br>        \vdots&amp;\ddots&amp;\vdots\<br>        \widetilde x_{n1}&amp;\cdots&amp;\widetilde x_{nn}<br>    \end{pmatrix}<br>\end{align*}<br>Let the matrix to which it is normalized be $Z$, and each element in $Z$ is given by<br>\begin{align*}<br>    z_{ij}&#x3D;\cfrac{\widetilde x_{ij}}{\sqrt{\displaystyle\sum_{i&#x3D;1}^n \widetilde x_{ij}^2}}<br>\end{align*}<br>\subsection{熵权法计算各项指标权重Entropy weighting method to calculate the weights of indicators}<br>为了确保权重的客观性，我们采用熵权法构造权重指标。在标准化处理后的非负矩阵。我们计算比重矩阵$P$ 其中$P$的每一个元素$p_{ij}$计算公式如下<br>\In order to ensure the objectivity of the weights, we use the entropy weight method to construct the weight indicators. In the non-negative matrix after normalization, we calculate the weight matrix $P$ where each element $p_{ij}$ of $P$ is calculated as follows<br>\begin{align*}<br>    p_{ij}&#x3D;\cfrac{z_{ij}}{\displaystyle\sum_{i&#x3D;1}^n z_{ij}}<br>\end{align*}<br>根据信息论中信息熵的定义，引入信息熵<br>\According to the definition of information entropy in information theory, we introduce the information entropy\begin{align*}<br>    E_j&#x3D;-\frac{\displaystyle\sum_{i&#x3D;1}^n p_{ij}\log p_{ij}}{\log n}<br>\end{align*}<br>if $p_{ij}&#x3D;0$ then let $E_j&#x3D;0$</p>
+<p> By calculating the information utility value $D_j&#x3D;1-E_j$ We Calculate the indicator weights\begin{align*}<br>    w_{j}&#x3D;\cfrac{D_{j}}{\displaystyle\sum_{j&#x3D;1}^n D_{j}}<br>\end{align*}<br>then derive the weight vector $W$<br>\subsection{计算得分和排序Calculating scores and ranking}<br>For an already normalized forward matrix $Z$</p>
+<p>Define the maximum value \begin{align*}<br>    Z^+&amp;&#x3D;(Z_1^+,Z_2^+,\cdots,Z_m^+)\<br>    &amp;&#x3D;(\max(z_{11},z_{21},\cdots,z_{n1}),\max(z_{12},z_{22},\cdots,z_{n2}),\max(z_{1m},z_{2m},\cdots,z_{nm}))<br>\end{align*}</p>
+<p>Similarly, define the minimum value<br>\begin{align*}<br>    Z^-&amp;&#x3D;(Z_1^-,Z_2^-,\cdots,Z_m^-)\<br>    &amp;&#x3D;(\min(z_{11},z_{21}),\cdots,z_{n1}),\min(z_{12},z_{22},\cdots,z_{n2}),\min(z_{1m},z_{2m},\cdots,z_{nm}))<br>\end{align*}<br>Under the introduction of the entropy weight method of weights<br>Define the distance between the $i$th evaluation object and the maximum value \begin{align*}<br>    D_i^+&#x3D;\sqrt{\displaystyle\sum_{j&#x3D;1}^m w_j(Z_j^+-z_{ij})^2}<br>\end{align*}<br>Define the distance of the $i$th evaluated object from the minimum value \begin{align*}<br>    D_i^-&#x3D;\sqrt{\displaystyle\sum_{j&#x3D;1}^m w_j(Z_j^–z_{ij})^2}<br>\end{align*}<br>Then the score of the $i$th evaluation object can be calculated as\begin{align*}<br>    S_i&#x3D;\cfrac{D_i^-}{D_i^-+D_i^+}<br>\end{align*}<br>\end{document}</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://nyashark-rathan.icu">NyaShark&amp;Rathan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://nyashark-rathan.icu/2025/02/04/%E7%AC%AC%E5%9B%9B%E9%97%AE%E7%9A%84latex/">https://nyashark-rathan.icu/2025/02/04/%E7%AC%AC%E5%9B%9B%E9%97%AE%E7%9A%84latex/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://nyashark-rathan.icu" target="_blank">NyaShark&Rathan的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/image/and.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/image/and.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">NyaShark&amp;Rathan</div><div class="author-info-description">这是NyaShark和Rathan共同建立的个人博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/393775563?spm_id_from=333.1007.0.0"><i class="&lt;img src=&quot;https://www.bilibili.com/favicon.ico&quot; width=&quot;16px&quot; height=&quot;16px&quot;&gt;"></i><span>欢迎关注b站账号</span></a><div class="card-info-social-icons"><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2550910357&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/02/04/%E7%AC%AC%E5%9B%9B%E9%97%AE%E7%9A%84latex/" title="第四问的latex">第四问的latex</a><time datetime="2025-02-04T14:11:24.000Z" title="发表于 2025-02-04 22:11:24">2025-02-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By NyaShark&Rathan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><div><canvas id="snow" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:99999;pointer-events:none"></canvas></div><script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script><script async type="text/javascript" src="https://cdn.jsdelivr.net/gh/Candinya/Kratos-Rebirth@latest/source/js/snow.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = 'b16a1fa0e63c46a4b8f28abfb06ae3fe';
+  var gaud_map_key = 'e2b04289e870b005374ee030148d64fd&s=rsv3';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '112.982279,28.19409';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
